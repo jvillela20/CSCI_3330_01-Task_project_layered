@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get("/", taskController.getTasks);
 
-router.post("/api/tasks", taskController.addTask);
+router.post("/", taskController.addTask);
 
 router.use(taskController.errorHandler);
 
